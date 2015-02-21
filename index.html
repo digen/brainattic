@@ -1,0 +1,27 @@
+---
+layout: default
+title: BrainAttic
+---
+ 
+<div id="home">
+
+
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h1>Presentations</h1>
+  <ul class="posts">
+      <li>
+        <span>10th January 2015</span> &raquo; 
+        <a href="https://github.com/digen/foss-presentation">Introduction to FOSS</a>
+        at <a href="http://blog.rkmissionashrama.org/">Ramkrishna Mission Ashrama, Belgaum</a>
+      </li>
+  </ul>
+
+
+</div>
+
